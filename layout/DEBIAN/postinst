@@ -1,0 +1,7 @@
+#!/bin/bash
+if grep -Fxq "%mobile ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
+then
+:
+else
+echo "%mobile ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+fi
